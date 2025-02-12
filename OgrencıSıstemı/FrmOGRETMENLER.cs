@@ -44,7 +44,7 @@ namespace OgrencıSıstemı
             komut.Parameters.AddWithValue("@p7", Cmbilce.Text);
             komut.Parameters.AddWithValue("@p8", Cmbbrans.Text);
             komut.ExecuteNonQuery();
-            
+
             bgl.Baglanti().Close();
             MessageBox.Show("Öğretmen Eklendi", "Bilgi", MessageBoxButtons.OK, MessageBoxIcon.Information);
             Listele();
@@ -56,6 +56,20 @@ namespace OgrencıSıstemı
             FrmOgrenciler frmOgrenciler = new FrmOgrenciler();
             // Copy necessary properties from v to frmOgrenciler
             return frmOgrenciler;
+        }
+
+        private void Cmbil_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            Cmbil.Items.Clear();
+            Cmbil.Text = "";
+            SqlCommand komut = new SqlCommand("Select IL from dbo.ILLER where sehiradi=@p1", bgl.Baglanti());
+            komut.Parameters.AddWithValue("@p1", Cmbil.SelectedIndex + 1);
+            SqlDataReader dr = komut.ExecuteReader();
+            while (dr.Read())
+            {
+                Cmbil.Items.Add(dr[1]);
+            }
+            dr.Close();
         }
     }
 

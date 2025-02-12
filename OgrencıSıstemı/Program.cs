@@ -17,7 +17,7 @@ namespace OgrencıSıstemı
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmGiris());
 
             // The following code should be part of a method that executes SQL commands
             using (SqlConnection connection = new SqlConnection("Server=localhost;Database='Merve';Integrated Security=True;"))
