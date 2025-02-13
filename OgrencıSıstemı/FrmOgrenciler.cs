@@ -65,17 +65,6 @@ namespace OgrencıSıstemı
             DataTable dt5 = new DataTable();
 
         }
-        void sehirekle()
-        {
-            SqlCommand komut = new SqlCommand("Select * From TBL_ILLER", bgl.Baglanti());
-            SqlDataReader dr = komut.ExecuteReader();
-            while (dr.Read())
-            {
-                Cmbil.Items.Add(dr[1]);
-            }
-            bgl.Baglanti().Close();
-
-        }
 
         private void sehirListesi()
         {
@@ -107,40 +96,5 @@ namespace OgrencıSıstemı
             listele();
             sehirListesi();
         }
-
-        private void CmbSehir_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            void sehirekle()
-            {
-                SqlCommand komut = new SqlCommand("Select * From TBL_ILLER", bgl.Baglanti());
-                SqlDataReader dr = komut.ExecuteReader();
-                while (dr.Read())
-                {
-                    Cmbil.Items.Add(dr[1]);
-                }
-                bgl.Baglanti().Close();
-
-            }
-        }
-     
-        private void Cmbilce_SelectedIndexChanged(object sender, EventArgs e)
-        {
-            void ilceekle()
-            {
-                // İlçelerin listesini getir
-                Cmbilce.Items.Clear();
-                Cmbilce.Text = "";
-                SqlCommand komut = new SqlCommand("Select ilce from dbo.ilceler where sehiradi=@p1", bgl.Baglanti());
-                komut.Parameters.AddWithValue("@p1", Cmbilce.SelectedIndex + 1);
-                SqlDataReader dr = komut.ExecuteReader();
-                while (dr.Read())
-                {
-                    Cmbilce.Items.Add(dr[1]);
-                }
-                dr.Close();
-            }
-
-        }
-        
     }
 }

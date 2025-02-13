@@ -159,7 +159,6 @@ namespace OgrencıSıstemı
             this.Cmbil.Name = "Cmbil";
             this.Cmbil.Size = new System.Drawing.Size(138, 26);
             this.Cmbil.TabIndex = 21;
-            this.Cmbil.SelectedIndexChanged += new System.EventHandler(this.Cmbil_SelectedIndexChanged);
             // 
             // pictureBox1
             // 
