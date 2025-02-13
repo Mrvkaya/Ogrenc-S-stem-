@@ -31,20 +31,6 @@
             this.components = new System.ComponentModel.Container();
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmOgrenciler));
             this.xtraTabPage2 = new DevExpress.XtraTab.XtraTabPage();
-            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
-            this.CmbSehir = new System.Windows.Forms.ComboBox();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
-            this.labelControl9 = new DevExpress.XtraEditors.LabelControl();
-            this.labelControl11 = new DevExpress.XtraEditors.LabelControl();
-            this.Btntemizle = new DevExpress.XtraEditors.SimpleButton();
-            this.Btnguncelle = new DevExpress.XtraEditors.SimpleButton();
-            this.Btnsil = new DevExpress.XtraEditors.SimpleButton();
-            this.Btnkaydet = new DevExpress.XtraEditors.SimpleButton();
-            this.Btnresim = new DevExpress.XtraEditors.SimpleButton();
-            this.Rchadres = new System.Windows.Forms.RichTextBox();
-            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
-            this.Txtmail = new DevExpress.XtraEditors.TextEdit();
-            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
             this.Cmbil = new System.Windows.Forms.ComboBox();
             this.MskOgrenciNo = new System.Windows.Forms.MaskedTextBox();
             this.Cmbilce = new System.Windows.Forms.ComboBox();
@@ -82,10 +68,17 @@
             this.FrmCtrl8 = new DevExpress.XtraTab.XtraTabPage();
             this.gridControl4 = new DevExpress.XtraGrid.GridControl();
             this.gridView4 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.labelControl8 = new DevExpress.XtraEditors.LabelControl();
+            this.Txtmail = new DevExpress.XtraEditors.TextEdit();
+            this.labelControl10 = new DevExpress.XtraEditors.LabelControl();
+            this.Rchadres = new System.Windows.Forms.RichTextBox();
+            this.Btnresim = new DevExpress.XtraEditors.SimpleButton();
+            this.Btnkaydet = new DevExpress.XtraEditors.SimpleButton();
+            this.Btnsil = new DevExpress.XtraEditors.SimpleButton();
+            this.Btnguncelle = new DevExpress.XtraEditors.SimpleButton();
+            this.Btntemizle = new DevExpress.XtraEditors.SimpleButton();
+            this.groupControl1 = new DevExpress.XtraEditors.GroupControl();
             this.xtraTabPage2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
-            this.groupControl1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Txtmail.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).BeginInit();
@@ -112,6 +105,9 @@
             this.FrmCtrl8.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Txtmail.Properties)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).BeginInit();
+            this.groupControl1.SuspendLayout();
             this.SuspendLayout();
             // 
             // xtraTabPage2
@@ -122,158 +118,6 @@
             this.xtraTabPage2.Size = new System.Drawing.Size(265, 566);
             this.xtraTabPage2.Text = "Öğrenci Bilgi-2";
             // 
-            // groupControl1
-            // 
-            this.groupControl1.Controls.Add(this.CmbSehir);
-            this.groupControl1.Controls.Add(this.comboBox2);
-            this.groupControl1.Controls.Add(this.labelControl9);
-            this.groupControl1.Controls.Add(this.labelControl11);
-            this.groupControl1.Controls.Add(this.Btntemizle);
-            this.groupControl1.Controls.Add(this.Btnguncelle);
-            this.groupControl1.Controls.Add(this.Btnsil);
-            this.groupControl1.Controls.Add(this.Btnkaydet);
-            this.groupControl1.Controls.Add(this.Btnresim);
-            this.groupControl1.Controls.Add(this.Rchadres);
-            this.groupControl1.Controls.Add(this.labelControl10);
-            this.groupControl1.Controls.Add(this.Txtmail);
-            this.groupControl1.Controls.Add(this.labelControl8);
-            this.groupControl1.Location = new System.Drawing.Point(3, 3);
-            this.groupControl1.Name = "groupControl1";
-            this.groupControl1.ShowCaption = false;
-            this.groupControl1.Size = new System.Drawing.Size(259, 560);
-            this.groupControl1.TabIndex = 0;
-            this.groupControl1.Text = "groupControl1";
-            // 
-            // CmbSehir
-            // 
-            this.CmbSehir.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.CmbSehir.FormattingEnabled = true;
-            this.CmbSehir.Location = new System.Drawing.Point(91, 211);
-            this.CmbSehir.Name = "CmbSehir";
-            this.CmbSehir.Size = new System.Drawing.Size(138, 26);
-            this.CmbSehir.TabIndex = 25;
-            // 
-            // comboBox2
-            // 
-            this.comboBox2.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Location = new System.Drawing.Point(91, 241);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(138, 26);
-            this.comboBox2.TabIndex = 24;
-            // 
-            // labelControl9
-            // 
-            this.labelControl9.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl9.Appearance.Options.UseFont = true;
-            this.labelControl9.Location = new System.Drawing.Point(25, 249);
-            this.labelControl9.Name = "labelControl9";
-            this.labelControl9.Size = new System.Drawing.Size(35, 18);
-            this.labelControl9.TabIndex = 23;
-            this.labelControl9.Text = "İLÇE:";
-            // 
-            // labelControl11
-            // 
-            this.labelControl11.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl11.Appearance.Options.UseFont = true;
-            this.labelControl11.Location = new System.Drawing.Point(25, 214);
-            this.labelControl11.Name = "labelControl11";
-            this.labelControl11.Size = new System.Drawing.Size(18, 18);
-            this.labelControl11.TabIndex = 22;
-            this.labelControl11.Text = "İL:";
-            // 
-            // Btntemizle
-            // 
-            this.Btntemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btntemizle.Appearance.Options.UseFont = true;
-            this.Btntemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btntemizle.ImageOptions.Image")));
-            this.Btntemizle.Location = new System.Drawing.Point(91, 468);
-            this.Btntemizle.Name = "Btntemizle";
-            this.Btntemizle.Size = new System.Drawing.Size(118, 35);
-            this.Btntemizle.TabIndex = 16;
-            this.Btntemizle.Text = "Temizle";
-            // 
-            // Btnguncelle
-            // 
-            this.Btnguncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btnguncelle.Appearance.Options.UseFont = true;
-            this.Btnguncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btnguncelle.ImageOptions.Image")));
-            this.Btnguncelle.Location = new System.Drawing.Point(91, 425);
-            this.Btnguncelle.Name = "Btnguncelle";
-            this.Btnguncelle.Size = new System.Drawing.Size(118, 37);
-            this.Btnguncelle.TabIndex = 15;
-            this.Btnguncelle.Text = "Güncelle";
-            // 
-            // Btnsil
-            // 
-            this.Btnsil.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btnsil.Appearance.Options.UseFont = true;
-            this.Btnsil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btnsil.ImageOptions.Image")));
-            this.Btnsil.Location = new System.Drawing.Point(91, 384);
-            this.Btnsil.Name = "Btnsil";
-            this.Btnsil.Size = new System.Drawing.Size(118, 35);
-            this.Btnsil.TabIndex = 14;
-            this.Btnsil.Text = "Sil";
-            // 
-            // Btnkaydet
-            // 
-            this.Btnkaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btnkaydet.Appearance.Options.UseFont = true;
-            this.Btnkaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btnkaydet.ImageOptions.Image")));
-            this.Btnkaydet.Location = new System.Drawing.Point(91, 343);
-            this.Btnkaydet.Name = "Btnkaydet";
-            this.Btnkaydet.Size = new System.Drawing.Size(118, 35);
-            this.Btnkaydet.TabIndex = 13;
-            this.Btnkaydet.Text = "Kaydet";
-            // 
-            // Btnresim
-            // 
-            this.Btnresim.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Btnresim.Appearance.Options.UseFont = true;
-            this.Btnresim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btnresim.ImageOptions.Image")));
-            this.Btnresim.Location = new System.Drawing.Point(91, 302);
-            this.Btnresim.Name = "Btnresim";
-            this.Btnresim.Size = new System.Drawing.Size(118, 35);
-            this.Btnresim.TabIndex = 10;
-            this.Btnresim.Text = "Resim Seç";
-            // 
-            // Rchadres
-            // 
-            this.Rchadres.Location = new System.Drawing.Point(91, 54);
-            this.Rchadres.Name = "Rchadres";
-            this.Rchadres.Size = new System.Drawing.Size(138, 145);
-            this.Rchadres.TabIndex = 11;
-            this.Rchadres.Text = "";
-            // 
-            // labelControl10
-            // 
-            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl10.Appearance.Options.UseFont = true;
-            this.labelControl10.Location = new System.Drawing.Point(25, 54);
-            this.labelControl10.Name = "labelControl10";
-            this.labelControl10.Size = new System.Drawing.Size(49, 18);
-            this.labelControl10.TabIndex = 10;
-            this.labelControl10.Text = "ADRES:";
-            // 
-            // Txtmail
-            // 
-            this.Txtmail.Location = new System.Drawing.Point(91, 24);
-            this.Txtmail.Name = "Txtmail";
-            this.Txtmail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.Txtmail.Properties.Appearance.Options.UseFont = true;
-            this.Txtmail.Size = new System.Drawing.Size(138, 24);
-            this.Txtmail.TabIndex = 9;
-            // 
-            // labelControl8
-            // 
-            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.labelControl8.Appearance.Options.UseFont = true;
-            this.labelControl8.Location = new System.Drawing.Point(25, 27);
-            this.labelControl8.Name = "labelControl8";
-            this.labelControl8.Size = new System.Drawing.Size(39, 18);
-            this.labelControl8.TabIndex = 1;
-            this.labelControl8.Text = "MAİL:";
-            // 
             // Cmbil
             // 
             this.Cmbil.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -282,6 +126,7 @@
             this.Cmbil.Name = "Cmbil";
             this.Cmbil.Size = new System.Drawing.Size(138, 26);
             this.Cmbil.TabIndex = 21;
+            this.Cmbil.SelectedIndexChanged += new System.EventHandler(this.Cmbilce_SelectedIndexChanged);
             // 
             // MskOgrenciNo
             // 
@@ -641,6 +486,116 @@
             this.gridView4.Name = "gridView4";
             this.gridView4.OptionsView.ShowGroupPanel = false;
             // 
+            // labelControl8
+            // 
+            this.labelControl8.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl8.Appearance.Options.UseFont = true;
+            this.labelControl8.Location = new System.Drawing.Point(25, 27);
+            this.labelControl8.Name = "labelControl8";
+            this.labelControl8.Size = new System.Drawing.Size(39, 18);
+            this.labelControl8.TabIndex = 1;
+            this.labelControl8.Text = "MAİL:";
+            // 
+            // Txtmail
+            // 
+            this.Txtmail.Location = new System.Drawing.Point(91, 24);
+            this.Txtmail.Name = "Txtmail";
+            this.Txtmail.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Txtmail.Properties.Appearance.Options.UseFont = true;
+            this.Txtmail.Size = new System.Drawing.Size(138, 24);
+            this.Txtmail.TabIndex = 9;
+            // 
+            // labelControl10
+            // 
+            this.labelControl10.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.labelControl10.Appearance.Options.UseFont = true;
+            this.labelControl10.Location = new System.Drawing.Point(15, 68);
+            this.labelControl10.Name = "labelControl10";
+            this.labelControl10.Size = new System.Drawing.Size(49, 18);
+            this.labelControl10.TabIndex = 10;
+            this.labelControl10.Text = "ADRES:";
+            // 
+            // Rchadres
+            // 
+            this.Rchadres.Location = new System.Drawing.Point(91, 69);
+            this.Rchadres.Name = "Rchadres";
+            this.Rchadres.Size = new System.Drawing.Size(138, 145);
+            this.Rchadres.TabIndex = 11;
+            this.Rchadres.Text = "";
+            // 
+            // Btnresim
+            // 
+            this.Btnresim.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Btnresim.Appearance.Options.UseFont = true;
+            this.Btnresim.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btnresim.ImageOptions.Image")));
+            this.Btnresim.Location = new System.Drawing.Point(111, 276);
+            this.Btnresim.Name = "Btnresim";
+            this.Btnresim.Size = new System.Drawing.Size(118, 35);
+            this.Btnresim.TabIndex = 10;
+            this.Btnresim.Text = "Resim Seç";
+            // 
+            // Btnkaydet
+            // 
+            this.Btnkaydet.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Btnkaydet.Appearance.Options.UseFont = true;
+            this.Btnkaydet.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btnkaydet.ImageOptions.Image")));
+            this.Btnkaydet.Location = new System.Drawing.Point(111, 317);
+            this.Btnkaydet.Name = "Btnkaydet";
+            this.Btnkaydet.Size = new System.Drawing.Size(118, 35);
+            this.Btnkaydet.TabIndex = 13;
+            this.Btnkaydet.Text = "Kaydet";
+            // 
+            // Btnsil
+            // 
+            this.Btnsil.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Btnsil.Appearance.Options.UseFont = true;
+            this.Btnsil.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btnsil.ImageOptions.Image")));
+            this.Btnsil.Location = new System.Drawing.Point(111, 358);
+            this.Btnsil.Name = "Btnsil";
+            this.Btnsil.Size = new System.Drawing.Size(118, 35);
+            this.Btnsil.TabIndex = 14;
+            this.Btnsil.Text = "Sil";
+            // 
+            // Btnguncelle
+            // 
+            this.Btnguncelle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Btnguncelle.Appearance.Options.UseFont = true;
+            this.Btnguncelle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btnguncelle.ImageOptions.Image")));
+            this.Btnguncelle.Location = new System.Drawing.Point(111, 399);
+            this.Btnguncelle.Name = "Btnguncelle";
+            this.Btnguncelle.Size = new System.Drawing.Size(118, 37);
+            this.Btnguncelle.TabIndex = 15;
+            this.Btnguncelle.Text = "Güncelle";
+            // 
+            // Btntemizle
+            // 
+            this.Btntemizle.Appearance.Font = new System.Drawing.Font("Tahoma", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.Btntemizle.Appearance.Options.UseFont = true;
+            this.Btntemizle.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("Btntemizle.ImageOptions.Image")));
+            this.Btntemizle.Location = new System.Drawing.Point(111, 442);
+            this.Btntemizle.Name = "Btntemizle";
+            this.Btntemizle.Size = new System.Drawing.Size(118, 35);
+            this.Btntemizle.TabIndex = 16;
+            this.Btntemizle.Text = "Temizle";
+            // 
+            // groupControl1
+            // 
+            this.groupControl1.Controls.Add(this.Btntemizle);
+            this.groupControl1.Controls.Add(this.Btnguncelle);
+            this.groupControl1.Controls.Add(this.Btnsil);
+            this.groupControl1.Controls.Add(this.Btnkaydet);
+            this.groupControl1.Controls.Add(this.Btnresim);
+            this.groupControl1.Controls.Add(this.Rchadres);
+            this.groupControl1.Controls.Add(this.labelControl10);
+            this.groupControl1.Controls.Add(this.Txtmail);
+            this.groupControl1.Controls.Add(this.labelControl8);
+            this.groupControl1.Location = new System.Drawing.Point(3, 3);
+            this.groupControl1.Name = "groupControl1";
+            this.groupControl1.ShowCaption = false;
+            this.groupControl1.Size = new System.Drawing.Size(259, 560);
+            this.groupControl1.TabIndex = 0;
+            this.groupControl1.Text = "groupControl1";
+            // 
             // FrmOgrenciler
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -652,10 +607,6 @@
             this.Text = "FrmOgrenciler";
             this.Load += new System.EventHandler(this.FrmOgrenciler_Load);
             this.xtraTabPage2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
-            this.groupControl1.ResumeLayout(false);
-            this.groupControl1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.Txtmail.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtAd.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSoyad.Properties)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.TxtId.Properties)).EndInit();
@@ -683,6 +634,10 @@
             this.FrmCtrl8.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.gridControl4)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.Txtmail.Properties)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.groupControl1)).EndInit();
+            this.groupControl1.ResumeLayout(false);
+            this.groupControl1.PerformLayout();
             this.ResumeLayout(false);
 
         }
@@ -690,16 +645,6 @@
         #endregion
 
         private DevExpress.XtraTab.XtraTabPage xtraTabPage2;
-        private DevExpress.XtraEditors.GroupControl groupControl1;
-        private DevExpress.XtraEditors.SimpleButton Btntemizle;
-        private DevExpress.XtraEditors.SimpleButton Btnguncelle;
-        private DevExpress.XtraEditors.SimpleButton Btnsil;
-        private DevExpress.XtraEditors.SimpleButton Btnkaydet;
-        private DevExpress.XtraEditors.SimpleButton Btnresim;
-        private System.Windows.Forms.RichTextBox Rchadres;
-        private DevExpress.XtraEditors.LabelControl labelControl10;
-        private DevExpress.XtraEditors.TextEdit Txtmail;
-        private DevExpress.XtraEditors.LabelControl labelControl8;
         private System.Windows.Forms.ComboBox Cmbil;
         private System.Windows.Forms.MaskedTextBox MskOgrenciNo;
         private System.Windows.Forms.ComboBox Cmbilce;
@@ -732,14 +677,20 @@
         private DevExpress.XtraGrid.GridControl gridControl4;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView4;
         private DevExpress.XtraEditors.PictureEdit pictureEdit1;
-        private System.Windows.Forms.ComboBox CmbSehir;
-        private System.Windows.Forms.ComboBox comboBox2;
-        private DevExpress.XtraEditors.LabelControl labelControl9;
-        private DevExpress.XtraEditors.LabelControl labelControl11;
         private DevExpress.XtraEditors.LabelControl labelControl13;
         private DevExpress.XtraEditors.DateEdit dateEdit1;
         private DevExpress.XtraEditors.LabelControl labelControl12;
         private System.Windows.Forms.RadioButton RnBtnErkek;
         private System.Windows.Forms.RadioButton RnBtnKadın;
+        private DevExpress.XtraEditors.GroupControl groupControl1;
+        private DevExpress.XtraEditors.SimpleButton Btntemizle;
+        private DevExpress.XtraEditors.SimpleButton Btnguncelle;
+        private DevExpress.XtraEditors.SimpleButton Btnsil;
+        private DevExpress.XtraEditors.SimpleButton Btnkaydet;
+        private DevExpress.XtraEditors.SimpleButton Btnresim;
+        private System.Windows.Forms.RichTextBox Rchadres;
+        private DevExpress.XtraEditors.LabelControl labelControl10;
+        private DevExpress.XtraEditors.TextEdit Txtmail;
+        private DevExpress.XtraEditors.LabelControl labelControl8;
     }
 }

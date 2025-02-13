@@ -17,10 +17,10 @@ namespace OgrencıSıstemı
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1());
+            Application.Run(new FrmGiris());
 
             // The following code should be part of a method that executes SQL commands
-            using (SqlConnection connection = new SqlConnection("Server=localhost;Database='Merve';Integrated Security=True;"))
+            using (SqlConnection connection = new SqlConnection("Server=localhost;Database='dbo.OgrencıSıstemı';Integrated Security=True;"))
             {
                 connection.Open();
                 string query = "ALTER TABLE dbo.TBL_OGRETMEN ALTER COLUMN OGRTTEL VARCHAR(15);";
