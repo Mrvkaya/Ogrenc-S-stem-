@@ -25,7 +25,7 @@ namespace OgrencıSıstemı
 
         private void BtnYonetici_Click(object sender, EventArgs e)
         {
-            SqlCommand komut = new SqlCommand("Select * from TBL_YONETICI where YONETICITC=@p1 and YONETICISIFRE=@p2", bgl.Baglanti());
+            SqlCommand komut = new SqlCommand("Select OGRTTC,OGRTSIFRE from TBL_AYARLAR inner join TBL_OGRETMENLER on TBL_AYARLAR.AYARLARID=TBL_OGRETMENLER.OGRTID where OGRTTC=@p1 and OGRTSIFRE=@p2",bgl.Baglanti());
             komut.Parameters.AddWithValue("@p1", MskTC.Text);
             komut.Parameters.AddWithValue("@p2", TxtSifre.Text);
             SqlDataReader dr = komut.ExecuteReader();
