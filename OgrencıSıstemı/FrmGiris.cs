@@ -18,7 +18,6 @@ namespace OgrencıSıstemı
             InitializeComponent();
         }
         sqlbaglantisi bgl = new sqlbaglantisi();
-        private void FrmGiris_Load(object sender, EventArgs e)
         {
             // Load event logic here
         }

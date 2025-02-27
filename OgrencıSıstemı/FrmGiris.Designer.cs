@@ -114,12 +114,11 @@
             // 
             this.BtnYonetici.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnYonetici.BackgroundImage")));
             this.BtnYonetici.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnYonetici.Location = new System.Drawing.Point(221, 443);
+            this.BtnYonetici.Location = new System.Drawing.Point(220, 443);
             this.BtnYonetici.Name = "BtnYonetici";
             this.BtnYonetici.Size = new System.Drawing.Size(190, 105);
             this.BtnYonetici.TabIndex = 6;
             this.BtnYonetici.UseVisualStyleBackColor = true;
-            this.BtnYonetici.Click += new System.EventHandler(this.BtnYonetici_Click);
             // 
             // BtnOgretmen
             // 
