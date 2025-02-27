@@ -38,6 +38,7 @@
             this.BtnYonetici = new System.Windows.Forms.Button();
             this.BtnOgretmen = new System.Windows.Forms.Button();
             this.BtnOgrenci = new System.Windows.Forms.Button();
+            this.BtnGiris = new System.Windows.Forms.Button();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.TxtSifre.Properties)).BeginInit();
             this.SuspendLayout();
@@ -47,7 +48,7 @@
             this.panel1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(192)))));
             this.panel1.Controls.Add(this.labelControl1);
             this.panel1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(0)))));
-            this.panel1.Location = new System.Drawing.Point(156, 79);
+            this.panel1.Location = new System.Drawing.Point(143, 124);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(719, 100);
             this.panel1.TabIndex = 0;
@@ -64,7 +65,7 @@
             // 
             // TxtSifre
             // 
-            this.TxtSifre.Location = new System.Drawing.Point(747, 444);
+            this.TxtSifre.Location = new System.Drawing.Point(701, 392);
             this.TxtSifre.Name = "TxtSifre";
             this.TxtSifre.Properties.Appearance.BackColor = System.Drawing.Color.Sienna;
             this.TxtSifre.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
@@ -80,7 +81,7 @@
             this.labelControl2.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl2.Appearance.Options.UseFont = true;
             this.labelControl2.Appearance.Options.UseForeColor = true;
-            this.labelControl2.Location = new System.Drawing.Point(156, 436);
+            this.labelControl2.Location = new System.Drawing.Point(162, 387);
             this.labelControl2.Name = "labelControl2";
             this.labelControl2.Size = new System.Drawing.Size(125, 33);
             this.labelControl2.TabIndex = 3;
@@ -90,7 +91,7 @@
             // 
             this.MskTC.BackColor = System.Drawing.Color.SaddleBrown;
             this.MskTC.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
-            this.MskTC.Location = new System.Drawing.Point(286, 443);
+            this.MskTC.Location = new System.Drawing.Point(293, 394);
             this.MskTC.Mask = "00000000000";
             this.MskTC.Name = "MskTC";
             this.MskTC.Size = new System.Drawing.Size(145, 26);
@@ -103,7 +104,7 @@
             this.labelControl3.Appearance.ForeColor = System.Drawing.Color.White;
             this.labelControl3.Appearance.Options.UseFont = true;
             this.labelControl3.Appearance.Options.UseForeColor = true;
-            this.labelControl3.Location = new System.Drawing.Point(662, 437);
+            this.labelControl3.Location = new System.Drawing.Point(622, 387);
             this.labelControl3.Name = "labelControl3";
             this.labelControl3.Size = new System.Drawing.Size(73, 33);
             this.labelControl3.TabIndex = 5;
@@ -113,20 +114,19 @@
             // 
             this.BtnYonetici.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnYonetici.BackgroundImage")));
             this.BtnYonetici.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnYonetici.Location = new System.Drawing.Point(156, 489);
+            this.BtnYonetici.Location = new System.Drawing.Point(220, 443);
             this.BtnYonetici.Name = "BtnYonetici";
-            this.BtnYonetici.Size = new System.Drawing.Size(190, 117);
+            this.BtnYonetici.Size = new System.Drawing.Size(190, 105);
             this.BtnYonetici.TabIndex = 6;
             this.BtnYonetici.UseVisualStyleBackColor = true;
-            this.BtnYonetici.Click += new System.EventHandler(this.BtnYonetici_Click);
             // 
             // BtnOgretmen
             // 
             this.BtnOgretmen.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnOgretmen.BackgroundImage")));
             this.BtnOgretmen.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnOgretmen.Location = new System.Drawing.Point(426, 489);
+            this.BtnOgretmen.Location = new System.Drawing.Point(417, 443);
             this.BtnOgretmen.Name = "BtnOgretmen";
-            this.BtnOgretmen.Size = new System.Drawing.Size(190, 117);
+            this.BtnOgretmen.Size = new System.Drawing.Size(190, 105);
             this.BtnOgretmen.TabIndex = 7;
             this.BtnOgretmen.UseVisualStyleBackColor = true;
             this.BtnOgretmen.Click += new System.EventHandler(this.FrmGiris_Load);
@@ -135,11 +135,21 @@
             // 
             this.BtnOgrenci.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("BtnOgrenci.BackgroundImage")));
             this.BtnOgrenci.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.BtnOgrenci.Location = new System.Drawing.Point(685, 489);
+            this.BtnOgrenci.Location = new System.Drawing.Point(613, 443);
             this.BtnOgrenci.Name = "BtnOgrenci";
-            this.BtnOgrenci.Size = new System.Drawing.Size(190, 117);
+            this.BtnOgrenci.Size = new System.Drawing.Size(190, 105);
             this.BtnOgrenci.TabIndex = 8;
             this.BtnOgrenci.UseVisualStyleBackColor = true;
+            // 
+            // BtnGiris
+            // 
+            this.BtnGiris.Font = new System.Drawing.Font("Microsoft Sans Serif", 21.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(162)));
+            this.BtnGiris.Location = new System.Drawing.Point(484, 583);
+            this.BtnGiris.Name = "BtnGiris";
+            this.BtnGiris.Size = new System.Drawing.Size(123, 41);
+            this.BtnGiris.TabIndex = 9;
+            this.BtnGiris.Text = "GİRİŞ";
+            this.BtnGiris.UseVisualStyleBackColor = true;
             // 
             // FrmGiris
             // 
@@ -147,7 +157,8 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(1029, 637);
+            this.ClientSize = new System.Drawing.Size(1029, 673);
+            this.Controls.Add(this.BtnGiris);
             this.Controls.Add(this.BtnOgrenci);
             this.Controls.Add(this.BtnOgretmen);
             this.Controls.Add(this.BtnYonetici);
@@ -179,5 +190,6 @@
         private System.Windows.Forms.Button BtnYonetici;
         private System.Windows.Forms.Button BtnOgretmen;
         private System.Windows.Forms.Button BtnOgrenci;
+        private System.Windows.Forms.Button BtnGiris;
     }
 }

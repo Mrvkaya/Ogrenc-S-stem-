@@ -18,7 +18,6 @@ namespace OgrencıSıstemı
             InitializeComponent();
         }
         sqlbaglantisi bgl = new sqlbaglantisi();
-        private void FrmGiris_Load(object sender, EventArgs e)
         {
             // Load event logic here
         }
@@ -29,9 +28,17 @@ namespace OgrencıSıstemı
             komut.Parameters.AddWithValue("@p1", MskTC.Text);
             komut.Parameters.AddWithValue("@p2", TxtSifre.Text);
             SqlDataReader dr = komut.ExecuteReader();
-            if (dr.Read())
+           
+
+             private void BtnGiris_click(object sender, EventArgs e)
+        {
+            string kullanici = MskTC.Text;
+            string sifre = TxtSifre.Text;
+
+            // Kullanıcı adı ve şifreyi kontrol et (veritabanı veya sabit değerler kullanılabilir)
+            if (kullanici == "kullanici" && sifre == "sifre") // Örnek olarak sabit değerler kullanıldı
             {
-                FrmAnaModul fr = new FrmAnaModul();
+              Form1 fr = new Form1();
                 fr.Show();
                 this.Hide();
             }
@@ -39,9 +46,24 @@ namespace OgrencıSıstemı
             {
                 MessageBox.Show("Hatalı TC veya Şifre", "Hata", MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
-        }
+            }
 
-        private class FrmAnaModul
+
+
+  /*Form1 aUniversitesiFormu = new Form1(); // Form2, A Üniversitesi menüsünün bulunduğu form
+                aUniversitesiFormu.Show();
+                this.Hide(); // Giriş formunu gizle
+
+
+
+
+
+           /* if (dr.Read())
+            {
+                
+        }*/
+
+        private class Form1
         {
             internal void Show()
             {
